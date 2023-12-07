@@ -1,6 +1,5 @@
 import classes from './Bienvenido.module.scss';
-import imagebackground from '../../../assets/cec35aniversarioazul.png';
-const Bienvenido = ()=> {
+ const Bienvenido = ()=> {
 
         return (
             <div className={classes.content}>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import classes from './Login.module.scss';
-import image from  '../../../assets/CEC35aniversarioazul.png';
+import image from  '../../../assets/aniversarioazul.png';
 const Login = (props) =>{
   const [userInput, setUserInput] = useState({
     email: "",
@@ -9,7 +9,7 @@ const Login = (props) =>{
    
   });
   const [error, setError] = useState("");
-  
+
   const dispatch = useDispatch();
 
   

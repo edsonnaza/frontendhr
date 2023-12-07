@@ -1,4 +1,4 @@
-import logoCompany from "../../../assets/cec35aniversarioblanco.png";
+import logo from "../../../assets/logo.png";
 import classes from "./Nav.module.scss";
 import Logout from "../Auth/Logout";
 import  NavLink  from "../NavLink/NavLink";
@@ -18,7 +18,7 @@ const Nav = (props) =>{
     <div className={classes.navContainer}>
       {/* DIV FOR LOGO */}
       <div>
-        <img className={classes.logo} src={logoCompany} alt="HR Logo" />
+        <img className={classes.logo} src={logo} alt="HR Logo" />
       </div>
 
       {/* DIV FOR SEARCH AND NAVIGATION */}
