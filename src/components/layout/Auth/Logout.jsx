@@ -1,12 +1,19 @@
 import classes from './Logout.module.scss';
-const Logout = (props)=>{
+import { useSelector } from 'react-redux';
+import { getFirstUser } from '../../../utils/selectors';
 
-    
+const Logout = (props)=>{
+  let user = useSelector(getFirstUser);
+
+  if(!user) {
+    user = useSelector(state => state.user ? state.user : {}); 
+
+  }
     return (
         <div className={classes.container}>
           
           <hr />
-          <h3 className="userName">{'Hello Admin!'}</h3>
+          <h3 className="userName">{user.email}</h3>
           <hr />
           <div className="form_buttons">
             <span 

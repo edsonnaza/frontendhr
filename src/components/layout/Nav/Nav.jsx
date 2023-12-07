@@ -2,8 +2,16 @@ import logoCompany from "../../../assets/cec35aniversarioblanco.png";
 import classes from "./Nav.module.scss";
 import Logout from "../Auth/Logout";
 import  NavLink  from "../NavLink/NavLink";
+import { useSelector } from 'react-redux';
+import { getFirstUser } from '../../../utils/selectors';
 
 const Nav = (props) =>{
+    let user = useSelector(getFirstUser);
+
+  if(!user) {
+    user = useSelector(state => state.user ? state.user : {}); 
+
+  }
 
     return ( 
 
@@ -25,7 +33,7 @@ const Nav = (props) =>{
          
                 
           <div className={classes.logoutDiv}>
-            { props.logged && <Logout logOut={props.logOut} /> }
+            { user?.loggedIn && <Logout logOut={props.logOut} /> }
           </div>
         </div>
      

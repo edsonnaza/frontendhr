@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import classes from './Login.module.scss';
 import image from  '../../../assets/CEC35aniversarioazul.png';
 const Login = (props) =>{
@@ -9,6 +10,7 @@ const Login = (props) =>{
   });
   const [error, setError] = useState("");
   
+  const dispatch = useDispatch();
 
   
 
