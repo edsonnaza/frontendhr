@@ -1,5 +1,3 @@
-//import { config } from 'dotenv';
-//config();
 import { useState, useEffect } from 'react'
 import { useDispatch,useSelector } from 'react-redux';
 import axios from 'axios';
@@ -11,9 +9,9 @@ import Login from "./components/layout/Auth/Login";
 import { getFirstUser } from './utils/selectors';
 import { useNavigate, Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 
-//const {BACKEND_URL_SERVER}= import.meta.env.BACKEND_URL_SERVER;
+ 
 //const URL = 'http://localhost:3500/hr/';
-//const URL = BACKEND_URL_SERVER;
+ 
 
 
 function App() {
