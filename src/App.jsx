@@ -67,24 +67,10 @@ function App() {
        }
     
     )} catch (error){
-       //throw Error ({error:error.message});
-       //console.log(error);
-      // console.log(error.response.data);
-    //   if(error)
-    //  setLoginMessage(error);
-      
-
-      //  if(error.response.status === 500) {
-      //  // error.response.data
        
-      //   setLoginMessage('User or password invalid, please try again!');
-      //  else {
         setLoginMessage(error.message);
 
-       // setLoginMessage('Something went wrong, please try again!');
-
-
-       //}
+      
     }
      
 
@@ -138,7 +124,7 @@ function useDetermineNavigation(logged) {
       
 
       <Routes>
-              <Route path='/' element={<Bienvenido/>}/>
+              {/* <Route path='/' element={<Bienvenido/>}  /> */}
               <Route path='/login' element = {<Login onLogin={onLogin} loginMessage={loginMessage} cleanLoginMessage={cleanLoginMessage}/>} />
             <Route path='*' element={<Page404 />} />
          </Routes>

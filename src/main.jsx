@@ -10,7 +10,8 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './redux/store';
 
 // Router
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
+
 // axios default base URL
 axios.defaults.baseURL='https://human-resources-backend.onrender.com/hr';
 
